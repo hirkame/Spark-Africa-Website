@@ -9,16 +9,161 @@
     <link rel="icon" href="./img/icon.jpg" />
     <title>Spark Africa</title>
     <!-- cssの読み込み -->
-    <link rel="stylesheet" href="./css/style.min.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="./css/home.min.css" />
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="./css/home.css" />
   </head>
 
   <!-- 以下に具体的な内容を書き込みます。 -->
   <body>
     <!-- まずはヘッダー -->
-    <header></header>
+    <header>
+      <div class="header-wrapper">
+        <img class="header-logo" src="./img/logo.png">
+        <ul class="header-lists">
+          <li><a>About</a></li>
+          <li><a>Blog</a></li>
+          <li><a>Join</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- Top Wrapper -->
+    <section class="top-wrapper"><h1>Africa Is Sparking.</h1></section>
+
+    <!-- About Wrapper -->
+    <section class="wrapper">
+      <div class="about-wrapper">
+        <h2 class="about-title">Provide real insights into Africa in Japan.</h2>
+        <div class="about-explanation">
+          <p>
+            Founded in 2017, we aim to solve the problem that Japanese people
+            have few interests in Africa.
+          </p>
+          <p>
+            To break through the status quo, we provide real insights to Africa
+            and build the community in Japan through following approaches.
+          </p>
+        </div>
+
+        <div class="about-items">
+          <div class="about-item research">
+            <img class="about-item-logo" src="./img/home/research.svg" />
+            <span>Research</span>
+          </div>
+          <div class="about-item event">
+            <img class="about-item-logo" src="./img/home/event.svg" />
+            <span>Event</span>
+          </div>
+          <div class="about-item design">
+            <img class="about-item-logo" src="./img/home/design.svg" />
+            <span>Design</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business Wrapper -->
+    <section class="wrapper" id="gray">
+      <div class="business-wrapper">
+        <div class="business-items">
+          <!-- Research -->
+          <div class="business-item business-item-research">
+            <div class="business-item-exp">
+              <div class="business-item-title">
+                <img class="business-item-logo" src="./img/home/research.svg" />
+                <h2>Research</h2>
+              </div>
+              <p>
+                We research topics mainly in Sub-Saharan Africa. Through our own
+                media and social media, we will update the latest information
+                about Africa.
+              </p>
+            </div>
+            <div class="business-item-img">
+              <img src="./img/home/research.jpg" />
+            </div>
+          </div>
+          <!-- Event -->
+          <div class="business-item business-item-event">
+            <div class="business-item-exp">
+              <div class="business-item-title">
+                <img class="business-item-logo" src="./img/home/event.svg" />
+                <h2>Event</h2>
+              </div>
+              <p>
+                By hosting events, we make an offline community where those who
+                are interested in Africa can connect each other and exchange
+                their insights.
+              </p>
+            </div>
+            <div class="business-item-img">
+              <img src="./img/home/event.jpg" />
+            </div>
+          </div>
+          <!-- Design -->
+          <div class="business-item business-item-design">
+            <div class="business-item-exp">
+              <div class="business-item-title">
+                <img class="business-item-logo" src="./img/home/design.svg" />
+                <h2>Design</h2>
+              </div>
+              <p>
+                We design our unique projects collaborating with many
+                stakeholders. So far, we have carried out field researches in
+                African countries.
+              </p>
+            </div>
+            <div class="business-item-img">
+              <img src="./img/home/design.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners Wrapper -->
+    <section class="wrapper">
+      <div class="partners-wrapper">
+        <h2>Partners</h2>
+        <div class="partner-logos">
+          <img class="partner-logo" src="./img/home/company_logo.jpg" />
+          <img class="partner-logo" src="./img/home/company_logo.jpg" />
+          <img class="partner-logo" src="./img/home/company_logo.jpg" />
+          <img class="partner-logo" src="./img/home/company_logo.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Wrapper -->
+    <section class="wrapper-for-contact">
+      <div class="contact-wrapper">
+        <h2>Ready to find your Africa?</h2>
+        <div class="contact-items">
+          <div class="join-us contact-item">
+            <p>
+              Join as a member! <br />
+              Find your Africa!
+            </p>
+            <a class="button" href="#">Join us</a>
+          </div>
+          <div class="work-with-us contact-item">
+            <p>
+              Maximize impacts of <br />
+              your business with us.
+            </p>
+            <a class="button" href="#">Work with us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- 最後に -->
-    <footer></footer>
+    <footer class="wrapper">
+      <div class="footer-wrapper">
+        <img class="footer-logo" src="./img/logo.png">
+        <p>Copyright (C) Spark Africa. All Rights Reserved.</p>
+      <div>
+    </footer>
     <!-- Javascriptの読み込み -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./js/script.js" type="text/javascript"></script>

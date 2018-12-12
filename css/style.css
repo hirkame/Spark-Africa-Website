@@ -1,0 +1,45 @@
+h1 {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 32px;
+  letter-spacing: 0.1em;
+  margin: 0;
+  color: #000000;
+}
+
+h2 {
+  font-family: Futura;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 22px;
+  letter-spacing: 0.1em;
+  margin: 0;
+  color: #000000;
+}
+
+p,
+span,
+a {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 23px;
+  font-size: 14px;
+  margin: 0;
+  color: #333333;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 100vw;
+  padding: 60px 0;
+}
+/*# sourceMappingURL=style.css.map */
