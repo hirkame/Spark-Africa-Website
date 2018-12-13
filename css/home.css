@@ -1,53 +1,4 @@
 @charset "UTF-8";
-header {
-  position: fixed;
-  width: 100vw;
-  height: 77px;
-  background: white;
-}
-
-header .header-wrapper {
-  max-width: 925px;
-  width: 90%;
-  height: 100%;
-  padding: 10px 0;
-  margin: 0 auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-header .header-wrapper .header-logo {
-  width: auto;
-  height: 100%;
-}
-
-header .header-wrapper .header-lists {
-  list-style: none;
-  float: right;
-  margin: 0;
-  padding: 0;
-}
-
-header .header-wrapper .header-lists li {
-  float: left;
-  text-align: center;
-  width: 110px;
-}
-
-header .header-wrapper .header-lists li a {
-  display: inline-block;
-  padding: 18px 25px;
-  line-height: 21px;
-  font-family: Futura;
-  font-style: normal;
-  font-weight: normal;
-  line-height: normal;
-  font-size: 15px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  color: black;
-}
-
 .top-wrapper {
   width: 100vw;
   height: 80vh;
@@ -186,6 +137,8 @@ header .header-wrapper .header-lists li a {
 .business-wrapper .business-items .business-item .business-item-exp .learn-more .learn-more-link:hover {
   text-decoration: underline;
   color: #5fbff5;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
 }
 
 .business-wrapper .business-items .business-item .business-item-exp .learn-more .learn-more-link:hover .arrow {
@@ -309,25 +262,5 @@ header .header-wrapper .header-lists li a {
   background-color: #333;
   color: white;
   background: #5fbff5;
-}
-
-footer {
-  max-width: 925px;
-  width: 90%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-footer .footer-logo {
-  display: inline-block;
-  vertical-align: middle;
-  width: 10vw;
-  height: auto;
-  margin-right: 8.5vw;
-}
-
-footer p {
-  display: inline-block;
-  vertical-align: middle;
 }
 /*# sourceMappingURL=home.css.map */
