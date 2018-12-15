@@ -32,25 +32,33 @@ a {
   color: #333333;
 }
 
+@media screen and (max-width: 720px) {
+  h1 {
+    font-size: 26px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  p,
+  span,
+  a {
+    font-size: 11.5px;
+    line-height: 19px;
+  }
+}
+
 body {
   margin: 0;
 }
 
-.wrapper {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  width: 100vw;
-  padding: 60px 0;
-}
-
-header {
+body header {
   position: fixed;
   width: 100vw;
   height: 77px;
   background: white;
 }
 
-header .header-wrapper {
+body header .header-wrapper {
   max-width: 925px;
   width: 90%;
   height: 100%;
@@ -60,25 +68,25 @@ header .header-wrapper {
           box-sizing: border-box;
 }
 
-header .header-wrapper .header-logo {
+body header .header-wrapper .header-logo {
   width: auto;
   height: 100%;
 }
 
-header .header-wrapper .header-lists {
+body header .header-wrapper .header-lists {
   list-style: none;
   float: right;
   margin: 0;
   padding: 0;
 }
 
-header .header-wrapper .header-lists li {
+body header .header-wrapper .header-lists li {
   float: left;
   text-align: center;
   width: 110px;
 }
 
-header .header-wrapper .header-lists li a {
+body header .header-wrapper .header-lists li a {
   display: inline-block;
   padding: 18px 25px;
   line-height: 21px;
@@ -92,14 +100,14 @@ header .header-wrapper .header-lists li a {
   color: black;
 }
 
-footer {
+body footer {
   max-width: 925px;
   width: 90%;
   margin: 0 auto;
   text-align: center;
 }
 
-footer .footer-logo {
+body footer .footer-logo {
   display: inline-block;
   vertical-align: middle;
   width: 10vw;
@@ -107,8 +115,15 @@ footer .footer-logo {
   margin-right: 8.5vw;
 }
 
-footer p {
+body footer p {
   display: inline-block;
   vertical-align: middle;
+}
+
+body .wrapper {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 100vw;
+  padding: 60px 0;
 }
 /*# sourceMappingURL=style.css.map */
