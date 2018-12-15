@@ -17,33 +17,41 @@
 }
 
 // aboutのCSS
-.about-wrapper {
-  max-width: 925px;
-  width: 90%;
-  margin: 0 auto;
-  text-align: center;
-  .about-explanation {
-    margin: 30px 0;
-  }
-  .about-items {
-    display: flex;
-    justify-content: space-evenly;
-    .about-item {
-      padding: 40px 100px;
-      border: 2px solid white;
-      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
-      border-radius: 5px;
-      transition: 0.5s;
-      &:hover {
-        border: 2px solid #5fbff5;
-      }
-      .about-item-logo {
-        width: auto;
-        height: 54px;
-        margin-bottom: 15px;
-      }
-      span {
-        display: block;
+.wrapper-for-about {
+  box-sizing: content-box;
+  width: 100vw;
+  padding: 60px 0 30px 0;
+  .about-wrapper {
+    max-width: 925px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    .about-explanation {
+      margin: 30px 0;
+    }
+    .about-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      .about-item {
+        padding: 40px 100px;
+        margin-bottom: 30px;
+        max-width: 90%;
+        border: 2px solid white;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        transition: 0.5s;
+        &:hover {
+          border: 2px solid #5fbff5;
+        }
+        .about-item-logo {
+          width: auto;
+          height: 54px;
+          margin-bottom: 15px;
+        }
+        span {
+          display: block;
+        }
       }
     }
   }
@@ -141,24 +149,46 @@
         margin-left: auto;
       }
     }
+    @media screen and (max-width: 720px) {
+      .business-item {
+        display: block;
+        .business-item-exp {
+          margin: 0;
+          width: 100%;
+        }
+        .business-item-img {
+          width: 100%;
+          min-width: 0;
+          margin-top: 30px;
+          text-align: center;
+        }
+      }
+    }
   }
 }
 
 // PartnersのCSS
-.partners-wrapper {
-  max-width: 925px;
-  width: 90%;
-  margin: 0 auto;
-  text-align: center;
-  h2 {
-    margin-bottom: 30px;
-  }
-  .partner-logos {
-    display: flex;
-    justify-content: space-evenly;
-    .partner-logo {
-      max-width: 140px;
-      max-height: 100px;
+.wrapper-for-partners {
+  box-sizing: content-box;
+  width: 100vw;
+  padding: 60px 0 30px 0;
+  .partners-wrapper {
+    max-width: 925px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    h2 {
+      margin-bottom: 30px;
+    }
+    .partner-logos {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      .partner-logo {
+        max-width: 140px;
+        max-height: 100px;
+        margin-bottom: 30px;
+      }
     }
   }
 }
@@ -189,7 +219,7 @@
           margin-bottom: 30px;
         }
         .button {
-          padding: 10px 50px;
+          padding: 10px 30px;
           color: #c4c4c4;
           background: #f7f7f7;
           box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24),
@@ -202,6 +232,10 @@
             background-color: #333;
             color: white;
             background: #5fbff5;
+          }
+          @media screen and (max-width: 720px) {
+            padding: 10px 20px;
+            max-width: 100%;
           }
         }
       }
