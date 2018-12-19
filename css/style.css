@@ -51,6 +51,10 @@ body {
   margin: 0;
 }
 
+body #gray {
+  background-color: #f7f7f7;
+}
+
 body header {
   position: fixed;
   width: 100vw;
