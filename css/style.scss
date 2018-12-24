@@ -61,6 +61,7 @@ body {
     width: 100vw;
     height: 77px;
     background: white;
+    z-index: 1000;
     .header-wrapper {
       max-width: 925px;
       width: 90%;
@@ -119,8 +120,43 @@ body {
   }
 
   .wrapper {
+    position: relative;
     box-sizing: content-box;
     width: 100vw;
     padding: 60px 0;
+  }
+
+  // Learn More Button
+  .learn-more {
+    width: 100%;
+    margin-top: 25px;
+    text-align: right;
+    transition: 0.5s;
+    transition-duration: 0.5s;
+    .learn-more-link {
+      display: inline-block;
+      height: 25px;
+      line-height: 25px;
+      .arrow {
+        margin-left: 10px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      &:hover {
+        text-decoration: underline;
+        color: #5fbff5;
+        transition: 0.35s;
+        .arrow {
+          transform: scale(1.1);
+          transition-duration: 0.5s;
+          path {
+            fill: #5fbff5;
+          }
+          circle {
+            stroke: #5fbff5;
+          }
+        }
+      }
+    }
   }
 }

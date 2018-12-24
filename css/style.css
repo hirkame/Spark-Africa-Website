@@ -60,6 +60,7 @@ body header {
   width: 100vw;
   height: 77px;
   background: white;
+  z-index: 1000;
 }
 
 body header .header-wrapper {
@@ -125,9 +126,54 @@ body footer p {
 }
 
 body .wrapper {
+  position: relative;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   width: 100vw;
   padding: 60px 0;
+}
+
+body .learn-more {
+  width: 100%;
+  margin-top: 25px;
+  text-align: right;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+body .learn-more .learn-more-link {
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+}
+
+body .learn-more .learn-more-link .arrow {
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+body .learn-more .learn-more-link:hover {
+  text-decoration: underline;
+  color: #5fbff5;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
+
+body .learn-more .learn-more-link:hover .arrow {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+body .learn-more .learn-more-link:hover .arrow path {
+  fill: #5fbff5;
+}
+
+body .learn-more .learn-more-link:hover .arrow circle {
+  stroke: #5fbff5;
 }
 /*# sourceMappingURL=style.css.map */
