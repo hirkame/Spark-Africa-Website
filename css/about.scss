@@ -7,6 +7,8 @@
   background-size: cover;
   background-position: center;
   h1 {
+    width: 90%;
+    margin: auto;
     text-align: center;
     position: absolute;
     left: 50%;
@@ -59,6 +61,19 @@
         }
       }
     }
+    @media screen and (max-width: 720px) {
+      .areas-of-focus-childwrapper {
+        padding: 0;
+        margin: 30px 0;
+        .text-area {
+          width: 100% !important;
+          margin-bottom: 30px;
+        }
+        .img-area {
+          width: 100% !important;
+        }
+      }
+    }
   }
 }
 
@@ -79,10 +94,13 @@
     flex-wrap: wrap;
     margin-top: 30px;
     .profile-card {
-      margin-top: 10px;
+      box-sizing: border-box;
+      width: 210px;
+      padding: 0 30px;
       .profile-photo {
-        width: 150px;
+        width: 100%;
         height: auto;
+        margin: 0 auto;
       }
       p {
         margin: 15px 0;
@@ -94,6 +112,13 @@
         width: 30px;
         height: auto;
         margin: 0 10px;
+      }
+      @media screen and (max-width: 720px) {
+        width: 50%;
+        padding: 0 7.5px;
+        .media-icon {
+          width: 24px;
+        }
       }
     }
   }

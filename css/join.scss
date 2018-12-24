@@ -38,6 +38,10 @@
   img {
     width: 100%;
   }
+  @media screen and (max-width: 720px) {
+    width: 100%;
+    padding: 30px 0 0 0;
+  }
 }
 // joinus wrapper
 .joinus-wrapper {
@@ -55,6 +59,13 @@
     }
     p {
       margin: 7.5px 0;
+    }
+  }
+  @media screen and (max-width: 720px) {
+    display: block;
+    .joinus-contents {
+      width: 100%;
+      padding: 0;
     }
   }
 }
@@ -77,5 +88,17 @@
     p {
       margin: 7.5px 0;
     }
+  }
+  @media screen and (max-width: 720px) {
+    display: block;
+    .workwithus-contents {
+      width: 100%;
+      padding: 0;
+    }
+  }
+}
+@media screen and (max-width: 720px) {
+  .no-margintop {
+    padding: 0px 0 60px 0 !important;
   }
 }

@@ -8,6 +8,8 @@
 }
 
 .top-wrapper h1 {
+  width: 90%;
+  margin: auto;
   text-align: center;
   position: absolute;
   left: 50%;
@@ -81,6 +83,20 @@
      object-fit: contain;
 }
 
+@media screen and (max-width: 720px) {
+  .wrapper-for-areas .areas-of-focus-wrapper .areas-of-focus-childwrapper {
+    padding: 0;
+    margin: 30px 0;
+  }
+  .wrapper-for-areas .areas-of-focus-wrapper .areas-of-focus-childwrapper .text-area {
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+  .wrapper-for-areas .areas-of-focus-wrapper .areas-of-focus-childwrapper .img-area {
+    width: 100% !important;
+  }
+}
+
 .advisory-wrapper {
   max-width: 925px;
   width: 90%;
@@ -109,12 +125,16 @@
 }
 
 .team-wrapper .profile-cards .profile-card {
-  margin-top: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 210px;
+  padding: 0 30px;
 }
 
 .team-wrapper .profile-cards .profile-card .profile-photo {
-  width: 150px;
+  width: 100%;
   height: auto;
+  margin: 0 auto;
 }
 
 .team-wrapper .profile-cards .profile-card p {
@@ -129,5 +149,15 @@
   width: 30px;
   height: auto;
   margin: 0 10px;
+}
+
+@media screen and (max-width: 720px) {
+  .team-wrapper .profile-cards .profile-card {
+    width: 50%;
+    padding: 0 7.5px;
+  }
+  .team-wrapper .profile-cards .profile-card .media-icon {
+    width: 24px;
+  }
 }
 /*# sourceMappingURL=about.css.map */
