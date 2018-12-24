@@ -17,7 +17,7 @@ $(function() {
       $(".header-list").css("color", "black");
       $(".header-logo-white").css("display", "none");
       $(".header-logo-black").css("display", "inline");
-      if ($(window).width() <= "720px") {
+      if (window.matchMedia("(max-width: 720px)").matches) {
         $(".menu-white").css("display", "none");
         $(".menu-black").css("display", "block");
       }
@@ -26,7 +26,8 @@ $(function() {
       $(".header-list").css("color", "white");
       $(".header-logo-white").css("display", "inline");
       $(".header-logo-black").css("display", "none");
-      if ($(window).width() <= "720px") {
+
+      if (window.matchMedia("(max-width: 720px)").matches) {
         $(".menu-white").css("display", "block");
         $(".menu-black").css("display", "none");
       }

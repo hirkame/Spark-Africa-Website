@@ -130,10 +130,6 @@ body header .header-wrapper .header-lists li a {
   }
 }
 
-body header .header-wrapper .menu {
-  display: none;
-}
-
 @media screen and (max-width: 720px) {
   body header .header-wrapper .header-lists {
     display: none;
