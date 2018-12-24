@@ -1,3 +1,7 @@
+header {
+  background: white !important;
+}
+
 .form-wrapper {
   max-width: 925px;
   width: 90%;

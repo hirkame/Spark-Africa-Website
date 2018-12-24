@@ -18,20 +18,26 @@
     <!-- まずはヘッダー -->
     <header>
       <div class="header-wrapper">
-        <a href="#"><img class="header-logo" src="./img/logo.png"/></a>
+        <a href="#"
+          ><img class="header-logo-white" src="../img/logowhite.png"/>
+          <img class="header-logo-black" src="../img/logoblack.png"
+        /></a>
         <ul class="header-lists">
-          <li><a href="./about">About</a></li>
+          <li><a class="header-list" href="./about">About</a></li>
           <!-- <li><a href="#">Blog</a></li> -->
-          <li><a href="./join/">Join</a></li>
-          <li><a href="./contact/">Contact</a></li>
+          <li><a class="header-list" href="./join/">Join</a></li>
+          <li><a class="header-list" href="./contact/">Contact</a></li>
         </ul>
       </div>
     </header>
     <!-- Top Wrapper -->
-    <section class="top-wrapper"><h1>Africa Is Sparking.</h1></section>
+    <section class="top-wrapper">
+      <div id="typed-strings"><p>Africa is Sparking.</p></div>
+      <h1 id="typed"></h1>
+    </section>
 
     <!-- About Wrapper -->
-    <section class="wrapper-for-about">
+    <section class="wrapper-for-about" id="header-showup">
       <div class="about-wrapper">
         <h2 class="about-title">Provide real insights into Africa in Japan.</h2>
         <div class="about-explanation">
@@ -46,15 +52,15 @@
         </div>
 
         <div class="about-items">
-          <div class="about-item research">
+          <div class="about-item" id="research-button">
             <img class="about-item-logo" src="./img/home/research.svg" />
             <span>Research</span>
           </div>
-          <div class="about-item event">
+          <div class="about-item" id="event-button">
             <img class="about-item-logo" src="./img/home/event.svg" />
             <span>Event</span>
           </div>
-          <div class="about-item design">
+          <div class="about-item" id="design-button">
             <img class="about-item-logo" src="./img/home/design.svg" />
             <span>Design</span>
           </div>
@@ -67,7 +73,7 @@
       <div class="business-wrapper">
         <div class="business-items">
           <!-- Research -->
-          <div class="business-item business-item-research">
+          <div class="business-item business-item-research" id="research">
             <div class="business-item-exp">
               <div class="business-item-title">
                 <img class="business-item-logo" src="./img/home/research.svg" />
@@ -103,7 +109,7 @@
             </div>
           </div>
           <!-- Event -->
-          <div class="business-item business-item-event">
+          <div class="business-item business-item-event" id="event">
             <div class="business-item-exp">
               <div class="business-item-title">
                 <img class="business-item-logo" src="./img/home/event.svg" />
@@ -139,7 +145,7 @@
             </div>
           </div>
           <!-- Design -->
-          <div class="business-item business-item-design">
+          <div class="business-item business-item-design" id="design">
             <div class="business-item-exp">
               <div class="business-item-title">
                 <img class="business-item-logo" src="./img/home/design.svg" />
@@ -201,14 +207,14 @@
               Join as a member! <br />
               Find your Africa!
             </p>
-            <a class="button" href="#">Join us</a>
+            <a class="button" href="./join/index.html#join">Join us</a>
           </div>
           <div class="work-with-us contact-item">
             <p>
               Maximize impacts of <br />
               your business with us.
             </p>
-            <a class="button" href="#">Work with us</a>
+            <a class="button" href="./join/index.html#work">Work with us</a>
           </div>
         </div>
       </div>
@@ -221,8 +227,18 @@
         <p>Copyright (C) Spark Africa. All Rights Reserved.</p>
       </div>
     </footer>
+
     <!-- Javascriptの読み込み -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./js/script.js" type="text/javascript"></script>
+    <script src="./js/home.js" type="text/javascript"></script>
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script>
+      var typed = new Typed("#typed", {
+        stringsElement: "#typed-strings",
+        typeSpeed: 80,
+        loop: true
+      });
+    </script>
   </body>
 </html>

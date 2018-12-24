@@ -60,7 +60,7 @@ body {
     position: fixed;
     width: 100vw;
     height: 77px;
-    background: white;
+    background: rgba(255, 255, 255, 0);
     z-index: 1000;
     .header-wrapper {
       max-width: 925px;
@@ -69,7 +69,13 @@ body {
       padding: 10px 0;
       margin: 0 auto;
       box-sizing: border-box;
-      .header-logo {
+      .header-logo-white {
+        display: inline;
+        width: auto;
+        height: 100%;
+      }
+      .header-logo-black {
+        display: none;
         width: auto;
         height: 100%;
       }
@@ -93,7 +99,7 @@ body {
             font-size: 15px;
             text-align: center;
             letter-spacing: 0.05em;
-            color: black;
+            color: white;
           }
         }
       }

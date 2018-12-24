@@ -19,23 +19,30 @@
     <header>
       <div class="header-wrapper">
         <a href="../index.html"
-          ><img class="header-logo" src="../img/logo.png" />
+          ><img class="header-logo-white" src="../img/logowhite.png" />
+          <img class="header-logo-black" src="../img/logoblack.png" />
         </a>
         <ul class="header-lists">
-          <li><a href="../about/">About</a></li>
+          <li><a class="header-list" href="../about/">About</a></li>
           <!-- <li><a href="#">Blog</a></li> -->
-          <li><a href="../join/">Join</a></li>
-          <li><a href="../contact/">Contact</a></li>
+          <li><a class="header-list" href="../join/">Join</a></li>
+          <li><a class="header-list" href="../contact/">Contact</a></li>
         </ul>
       </div>
     </header>
 
-    <section class="top-wrapper"><h1>Enroll in our activities.</h1></section>
+    <section class="top-wrapper">
+      <div id="typed-strings"><p>Enroll in our activities?</p></div>
+      <h1 id="typed"></h1>
+    </section>
 
-    <section class="wrapper">
+    <section class="wrapper" id="join">
       <div class="joinus-wrapper">
         <div class="joinus-contents">
-          <div class="joinus-background background"></div>
+          <div
+            class="joinus-background background rellax"
+            data-rellax-speed="-2"
+          ></div>
           <h2>Join us</h2>
           <p>We are always open for everyone who is interested in Africa.</p>
           <p>
@@ -45,7 +52,7 @@
             entrepreneurship. If you are interested, please contact with us.
           </p>
           <div class="learn-more">
-            <a class="learn-more-link">
+            <a href="../contact/" class="learn-more-link">
               Learn more
               <svg
                 class="arrow"
@@ -68,10 +75,13 @@
       </div>
     </section>
 
-    <section class="wrapper no-margintop">
+    <section class="wrapper no-margintop" id="work">
       <div class="workwithus-wrapper">
         <div class="workwithus-contents">
-          <div class="workwithus-background background"></div>
+          <div
+            class="workwithus-background background rellax"
+            data-rellax-speed="-2"
+          ></div>
           <h2>Work with us</h2>
           <p>We are passionate to collaborate with you.</p>
           <p>
@@ -80,7 +90,7 @@
             private companies to NGO. We are looking for collaborating with us!
           </p>
           <div class="learn-more">
-            <a class="learn-more-link">
+            <a href="../contact/" class="learn-more-link">
               Learn more
               <svg
                 class="arrow"
@@ -113,6 +123,20 @@
 
     <!-- Javascriptの読み込み -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="../js/script.js" type="text/javascript"></script>
+    <script src="../js/join.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.7.1/rellax.min.js"></script>
+    <script>
+      var rellax = new Rellax(".rellax");
+    </script>
+
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script>
+      var typed = new Typed("#typed", {
+        stringsElement: "#typed-strings",
+        typeSpeed: 80,
+        loop: true
+      });
+    </script>
   </body>
 </html>

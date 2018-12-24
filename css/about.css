@@ -20,6 +20,7 @@
 }
 
 .wrapper-for-areas {
+  position: relative;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   width: 100vw;
@@ -95,6 +96,19 @@
   .wrapper-for-areas .areas-of-focus-wrapper .areas-of-focus-childwrapper .img-area {
     width: 100% !important;
   }
+}
+
+.wrapper-for-areas .background {
+  position: absolute;
+  bottom: 25%;
+  left: 5%;
+  height: 80vh;
+  z-index: -1000;
+}
+
+.wrapper-for-areas .background img {
+  height: 100%;
+  width: auto;
 }
 
 .advisory-wrapper {

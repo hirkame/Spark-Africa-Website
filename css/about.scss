@@ -20,6 +20,7 @@
 
 // Areas of Focue CSS
 .wrapper-for-areas {
+  position: relative;
   box-sizing: content-box;
   width: 100vw;
   padding: 30px 0;
@@ -73,6 +74,17 @@
           width: 100% !important;
         }
       }
+    }
+  }
+  .background {
+    position: absolute;
+    bottom: 25%;
+    left: 5%;
+    height: 80vh;
+    z-index: -1000;
+    img {
+      height: 100%;
+      width: auto;
     }
   }
 }
