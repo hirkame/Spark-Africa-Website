@@ -10,7 +10,7 @@ h1 {
 }
 
 h2 {
-  font-family: Futura;
+  font-family: "Josefin Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: normal;
@@ -23,7 +23,7 @@ h2 {
 p,
 span,
 a {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 23px;
