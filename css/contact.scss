@@ -1,6 +1,23 @@
 // headerのCSS
 header {
   background: rgba(255, 255, 255, 1) !important;
+  .header-lists {
+    display: block;
+    .header-list {
+      color: black;
+    }
+  }
+  .menu {
+    display: none;
+  }
+  @media screen and (max-width: 720px) {
+    .header-lists {
+      display: none;
+    }
+    .menu {
+      display: block !important;
+    }
+  }
 }
 
 .form-wrapper {

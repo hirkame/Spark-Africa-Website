@@ -115,6 +115,105 @@ body {
           }
         }
       }
+      .menu {
+        display: none;
+      }
+      @media screen and (max-width: 720px) {
+        .header-lists {
+          display: none;
+        }
+        .header-lists.open {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          width: 100vw;
+          height: 100vh;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: rgba(0, 0, 0, 0.7);
+          a {
+            color: white !important;
+          }
+        }
+        .menu {
+          position: relative;
+          display: block;
+          z-index: 1000;
+          width: 30px;
+          height: 30px;
+          margin: 13.5px 0;
+          float: right;
+          span {
+            margin: 0 auto;
+            position: relative;
+            top: 12px;
+            width: 30px;
+            height: 3px;
+            background-color: white;
+            display: block;
+            transition-duration: 0s;
+            transition-delay: 0.2s;
+            &:before,
+            &:after {
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              content: "";
+              background-color: white;
+            }
+            &:before {
+              margin-top: -12px;
+              transition-property: margin, transform;
+              transition-duration: 0.2s;
+              transition-delay: 0.2s, 0s;
+            }
+            &:after {
+              margin-top: 12px;
+              transition-property: margin, transform;
+              transition-duration: 0.2s;
+              transition-delay: 0.2s, 0s;
+            }
+          }
+        }
+        .menu.active {
+          span {
+            background-color: rgba(0, 0, 0, 0);
+            transition-delay: 0.2s;
+            &:before {
+              margin-top: 0;
+              transform: rotate(45deg);
+              transition-delay: 0s, 0.2s;
+            }
+            &:after {
+              margin-top: 0;
+              transform: rotate(-45deg);
+              transition-delay: 0s, 0.2s;
+            }
+          }
+        }
+        .menu-white {
+          display: block;
+          span {
+            background-color: white;
+            &:before,
+            &:after {
+              background-color: white;
+            }
+          }
+        }
+        .menu-black {
+          display: none;
+          span {
+            background-color: black;
+            &:before,
+            &:after {
+              background-color: black;
+            }
+          }
+        }
+      }
     }
   }
 

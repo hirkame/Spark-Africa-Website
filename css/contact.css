@@ -2,6 +2,27 @@ header {
   background: white !important;
 }
 
+header .header-lists {
+  display: block;
+}
+
+header .header-lists .header-list {
+  color: black;
+}
+
+header .menu {
+  display: none;
+}
+
+@media screen and (max-width: 720px) {
+  header .header-lists {
+    display: none;
+  }
+  header .menu {
+    display: block !important;
+  }
+}
+
 .form-wrapper {
   max-width: 925px;
   width: 90%;

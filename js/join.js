@@ -7,11 +7,25 @@ $(function() {
       $(".header-list").css("color", "black");
       $(".header-logo-white").css("display", "none");
       $(".header-logo-black").css("display", "inline");
+      $(".menu-white").css("display", "none");
+      $(".menu-black").css("display", "block");
     } else {
       header.css("background", "rgba(255, 255, 255, 0)");
       $(".header-list").css("color", "white");
       $(".header-logo-white").css("display", "inline");
       $(".header-logo-black").css("display", "none");
+      $(".menu-white").css("display", "block");
+      $(".menu-black").css("display", "none");
+    }
+  });
+
+  $(".menu").click(function() {
+    $(this).toggleClass("active");
+
+    if ($(this).hasClass("active")) {
+      $(".header-lists").addClass("open");
+    } else {
+      $(".header-lists").removeClass("open");
     }
   });
 });
