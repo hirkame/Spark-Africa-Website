@@ -1,1 +1,16 @@
-/* No CSS *//*# sourceMappingURL=contact.css.map */
+.form-wrapper {
+  max-width: 925px;
+  width: 90%;
+  height: calc(100vh - 150px);
+  margin: 77px auto 60px auto;
+  text-align: center;
+}
+
+.form-wrapper h2 {
+  margin-bottom: 30px;
+}
+
+.form-wrapper p {
+  margin-bottom: 30px;
+}
+/*# sourceMappingURL=contact.css.map */
