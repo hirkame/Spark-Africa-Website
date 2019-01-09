@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://sparkafrica.org/$1 [R=301,L]
+
+RewriteCond %{HTTPS} on
+RewriteCond %{HTTP_HOST} ^www.sparkafrica.org$
+RewriteRule ^(.*)$ https://sparkafrica.org/$1 [R=301,L]
