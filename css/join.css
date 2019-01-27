@@ -121,9 +121,7 @@
   }
 }
 
-@media screen and (max-width: 720px) {
-  .no-margintop {
-    padding: 0px 0 60px 0 !important;
-  }
+.no-margintop {
+  padding: 0px 0 90px 0 !important;
 }
 /*# sourceMappingURL=join.css.map */

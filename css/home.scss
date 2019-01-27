@@ -20,39 +20,14 @@
 .wrapper-for-about {
   box-sizing: content-box;
   width: 100vw;
-  padding: 60px 0 30px 0;
+  padding: 90px 0 60px 0;
   .about-wrapper {
-    max-width: 925px;
+    max-width: 500px;
     width: 90%;
     margin: 0 auto;
     text-align: center;
     .about-explanation {
       margin: 30px 0;
-    }
-    .about-items {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      .about-item {
-        padding: 40px 100px;
-        margin-bottom: 30px;
-        max-width: 90%;
-        border: 2px solid white;
-        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
-        border-radius: 5px;
-        transition: 0.5s;
-        &:hover {
-          border: 2px solid #5fbff5;
-        }
-        .about-item-logo {
-          width: auto;
-          height: 54px;
-          margin-bottom: 15px;
-        }
-        span {
-          display: block;
-        }
-      }
     }
   }
 }
@@ -62,67 +37,140 @@
   max-width: 925px;
   width: 90%;
   margin: 0 auto;
+  h2 {
+    text-align: center;
+  }
   .business-items {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
     .business-item {
-      width: 100%;
-      display: flex;
+      width: 30%;
+      min-width: 270px;
       align-items: center;
-      .business-item-exp {
-        width: 32%;
-        margin-right: auto;
-        .business-item-title {
-          width: 100%;
-          height: 38px;
-          margin-bottom: 30px;
-          .business-item-logo {
-            display: inline-block;
-            vertical-align: middle;
-            width: auto;
-            height: 100%;
-            margin-right: 25px;
-          }
-          h2 {
-            display: inline-block;
-            vertical-align: middle;
-            height: 38px;
-            line-height: 38px;
-          }
-        }
+      margin: 0 auto;
+      padding-bottom: 30px;
+      img {
+        height: 30px;
+        width: auto;
       }
-      .business-item-img {
-        min-width: 340px;
-        width: 60%;
+      .business-item-exp {
+        float: right;
+        width: 75%;
+      }
+    }
+  }
+}
+
+// Areas of Focue CSS
+.wrapper-for-areas {
+  position: relative;
+  box-sizing: content-box;
+  width: 100vw;
+  padding: 60px 0;
+  background-color: black;
+  .areas-of-focus-wrapper {
+    max-width: 925px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0;
+    text-align: center;
+    img {
+      width: 20%;
+      height: auto;
+      margin: 0 auto;
+    }
+    .text-area {
+      max-width: 500px;
+      width: 90%;
+      margin: 0 auto;
+      h2 {
+        margin: 30px 0;
+        color: #ffffff;
+      }
+      p {
+        margin: 7.5px 0;
+        color: #fbfbfb;
+      }
+    }
+    .areas-of-focus-childwrapper {
+      width: 100%;
+      height: auto;
+      padding: 30px 0;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .area-item {
+        width: 32%;
+        height: auto;
         img {
           width: 100%;
-          height: auto;
+          object-fit: contain;
         }
-      }
-    }
-    .business-item-research,
-    .business-item-event {
-      margin-bottom: 60px;
-    }
-    .business-item-event {
-      flex-direction: row-reverse;
-      .business-item-exp {
-        width: 32%;
-        margin-right: 0;
-        margin-left: auto;
       }
     }
     @media screen and (max-width: 720px) {
-      .business-item {
-        display: block;
-        .business-item-exp {
-          margin: 0;
-          width: 100%;
+      .text-area {
+        width: 100% !important;
+        margin-bottom: 30px;
+      }
+      .areas-of-focus-childwrapper {
+        padding: 0;
+        margin: 30px 0 0 0;
+      }
+    }
+  }
+  .background {
+    position: absolute;
+    bottom: 25%;
+    right: 5%;
+    height: 80vh;
+    max-height: 100vw;
+    z-index: -1000;
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+}
+
+// Team
+.team-wrapper {
+  max-width: 925px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  .profile-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    .profile-card {
+      box-sizing: border-box;
+      width: 210px;
+      padding: 0 30px;
+      .profile-photo {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+      }
+      p {
+        margin: 15px 0;
+        span {
+          font-weight: 600;
         }
-        .business-item-img {
-          width: 100%;
-          min-width: 0;
-          margin-top: 30px;
-          text-align: center;
+      }
+      .media-icon {
+        width: 30px;
+        height: auto;
+        margin: 0 10px;
+      }
+      @media screen and (max-width: 720px) {
+        width: 50%;
+        padding: 0 7.5px;
+        .media-icon {
+          width: 24px;
         }
       }
     }
@@ -133,7 +181,7 @@
 .wrapper-for-partners {
   box-sizing: content-box;
   width: 100vw;
-  padding: 60px 0 30px 0;
+  padding: 90px 0 60px 0;
   .partners-wrapper {
     max-width: 925px;
     width: 90%;
@@ -150,56 +198,6 @@
         max-width: 140px;
         max-height: 100px;
         margin-bottom: 30px;
-      }
-    }
-  }
-}
-
-// ContactについてのCSS
-.wrapper-for-contact {
-  position: relative;
-  padding: 30px 0;
-  background-image: url(../img/home/contact.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  .contact-wrapper {
-    max-width: 620px;
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 30px 0;
-    background-color: white;
-    h2 {
-      margin-bottom: 30px;
-    }
-    .contact-items {
-      display: flex;
-      .contact-item {
-        width: 50%;
-        p {
-          margin-bottom: 30px;
-        }
-        .button {
-          padding: 10px 30px;
-          color: #c4c4c4;
-          background: #f7f7f7;
-          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24),
-            0px 0px 2px rgba(0, 0, 0, 0.12);
-          border-radius: 2px;
-          text-decoration: none;
-          transition: 0.5s;
-          &:hover {
-            /* マウスオーバー時に背景色をグレーに変更 */
-            background-color: #333;
-            color: white;
-            background: #5fbff5;
-          }
-          @media screen and (max-width: 720px) {
-            padding: 10px 20px;
-            max-width: 100%;
-          }
-        }
       }
     }
   }
