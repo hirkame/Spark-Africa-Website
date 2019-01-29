@@ -6,14 +6,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  h1 {
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: calc(40vh + 37.5px);
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-  }
 }
 
 // aboutのCSS
@@ -145,6 +137,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     margin-top: 30px;
     .profile-card {
       box-sizing: border-box;
@@ -166,9 +159,10 @@
         height: auto;
         margin: 0 10px;
       }
-      @media screen and (max-width: 720px) {
-        width: 50%;
-        padding: 0 7.5px;
+      @media screen and (max-width: 520px) {
+        width: 43%;
+        padding: 0;
+        margin: 0 auto;
         .media-icon {
           width: 24px;
         }
@@ -195,6 +189,7 @@
       justify-content: space-evenly;
       flex-wrap: wrap;
       .partner-logo {
+        object-fit: contain;
         max-width: 140px;
         max-height: 100px;
         margin-bottom: 30px;

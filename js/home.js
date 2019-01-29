@@ -1,14 +1,4 @@
 $(function() {
-  $("#research-button").click(function() {
-    $("html,body").animate({ scrollTop: $("#research").offset().top - 120 });
-  });
-  $("#event-button").click(function() {
-    $("html,body").animate({ scrollTop: $("#event").offset().top - 120 });
-  });
-  $("#design-button").click(function() {
-    $("html,body").animate({ scrollTop: $("#design").offset().top - 120 });
-  });
-
   var homeTop = $("#header-showup").offset().top;
   var header = $("header");
   $(window).scroll(function() {
