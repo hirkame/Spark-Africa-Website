@@ -40,6 +40,7 @@ a {
   font-size: 14px;
   margin: 0;
   color: #333333;
+  text-decoration: none;
 }
 
 #typed {
@@ -140,6 +141,13 @@ body header .header-wrapper .header-lists li a {
   text-align: center;
   letter-spacing: 0.05em;
   color: white;
+}
+
+body header .header-wrapper .header-lists li a:hover {
+  text-decoration: underline;
+  color: #5fbff5 !important;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
 }
 
 @media screen and (max-width: 550px) {

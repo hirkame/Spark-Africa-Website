@@ -41,6 +41,7 @@ a {
   font-size: 14px;
   margin: 0;
   color: #333333;
+  text-decoration: none;
 }
 
 #typed {
@@ -129,6 +130,11 @@ body {
             text-align: center;
             letter-spacing: 0.05em;
             color: white;
+            &:hover {
+              text-decoration: underline;
+              color: #5fbff5 !important;
+              transition: 0.35s;
+            }
           }
           @media screen and (max-width: 550px) {
             width: auto;
