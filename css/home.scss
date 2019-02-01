@@ -14,12 +14,15 @@
   width: 100vw;
   padding: 90px 0 60px 0;
   .about-wrapper {
-    max-width: 500px;
+    max-width: 520px;
     width: 90%;
     margin: 0 auto;
     text-align: center;
     .about-explanation {
       margin: 30px 0;
+      p {
+        margin: 7.5px 0;
+      }
     }
   }
 }
@@ -74,7 +77,7 @@
       margin: 0 auto;
     }
     .text-area {
-      max-width: 500px;
+      max-width: 520px;
       width: 90%;
       margin: 0 auto;
       h2 {

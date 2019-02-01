@@ -15,7 +15,7 @@
 }
 
 .wrapper-for-about .about-wrapper {
-  max-width: 500px;
+  max-width: 520px;
   width: 90%;
   margin: 0 auto;
   text-align: center;
@@ -23,6 +23,10 @@
 
 .wrapper-for-about .about-wrapper .about-explanation {
   margin: 30px 0;
+}
+
+.wrapper-for-about .about-wrapper .about-explanation p {
+  margin: 7.5px 0;
 }
 
 .business-wrapper {
@@ -89,7 +93,7 @@
 }
 
 .wrapper-for-areas .areas-of-focus-wrapper .text-area {
-  max-width: 500px;
+  max-width: 520px;
   width: 90%;
   margin: 0 auto;
 }
